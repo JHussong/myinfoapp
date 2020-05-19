@@ -1,0 +1,32 @@
+.imageSearch {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .imageSearch__form input {
+    margin-top: 7px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius:  15px 15px 15px 15px;
+    padding-bottom: 8px;
+    width: 50%;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .imageSearch__form input:focus {
+    outline: none;
+  }
+  
+  .imageSearch__form button {
+    position: absolute;
+    top: 4px;
+    background: #2b4ee7;
+    color: #fff;
+  }

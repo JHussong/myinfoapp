@@ -1,0 +1,56 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+body {  
+background-image: linear-gradient(to right, rgb(210, 230, 250), #5c9ef5);
+}
+
+
+.page-title {
+    text-decoration: underline;
+    margin-top: 55px;
+    text-align: center;
+    font-style: italic;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.articles-container {
+    display: grid;
+    justify-self: center;
+
+}
+
+.card {
+    display: grid;
+    justify-self: center;
+  
+    width: 95vw;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px #c5c5c5;
+}
+
+.card-header {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgba(64, 136, 243, 0.6);
+}
+
+.card-desc {
+    font-weight: 400;
+}
+
+.card-auth {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.card-date {
+    font-size: 12px;
+
+}

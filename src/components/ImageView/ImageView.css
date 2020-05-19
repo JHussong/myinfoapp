@@ -1,0 +1,43 @@
+.imageView__container {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+  
+.imageView__img {
+  height: 400px;
+  width: auto;
+}
+  
+.imageView__copyright {
+  color: #8f8f8f;
+}
+  
+.imageView__text {
+  margin-top: 1rem;
+}
+  
+.imageView__text h4, h5, span {
+  font-size: 12px;
+  letter-spacing: .5px;
+  color: #ffffff;
+}
+  
+.imageView__text h4 span {
+  font-weight: bold;
+  color: #fa1d04;
+}
+  
+.imageView__text a {
+  font-weight: bold;
+  color: #fa1d04;
+}
+  
+.imageView__text .button {
+  border: #2b4ee7;
+  background: #2b4ee7;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
