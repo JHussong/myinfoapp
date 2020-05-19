@@ -2,8 +2,10 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
+    {"src": "public/favicon.ico",
+    "sizes": "12x12"}
   ],
-  "start_url": ".",
+  "start_url": "index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
