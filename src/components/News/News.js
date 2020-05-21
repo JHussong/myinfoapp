@@ -11,9 +11,12 @@ class News extends React.Component {
     errors: null
   };
 
+
   getArticles() {
 
-    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`)
+    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`, {
+      headers:  {'Access-Control-Allow-Origin': '*'}
+    })
       .then(res => res.json())
       .then(data =>
         data.articles.map(article => ({
