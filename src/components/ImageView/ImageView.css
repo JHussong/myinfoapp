@@ -1,6 +1,6 @@
 .imageView__container {
   margin-top: 25px;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   color: #fff;
 }
@@ -41,3 +41,16 @@
   color: #ffffff;
 }
 
+@media(max-width: 600px) {
+  .imageView__container {
+    margin-top: 25px;
+    width: 80vw;
+    text-align: center;
+    color: #fff;
+  }
+
+  .imageView__img {
+    height: 400px;
+    width: auto;
+  }
+}
