@@ -12,32 +12,29 @@ class News extends React.Component {
   };
 
 
-  getArticles() {
-
-    fetch(`/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`)
-      .then(res => res.json())
-      .then(data =>
-        data.articles.map(article => ({
-          date: `${article.publishedAt}`,
-          title: `${article.title}`,
-          url: `${article.url}`,
-          author: `${article.author}`,
-          description: `${article.description}`,
-          source: `${article.source}`,
-          id: `${article.id}`
-        }))
-      )
-      .then(articles => {
-        this.setState({
-          articles,
-          isLoading: false
-        });
-      })
-      .catch(error => this.setState({ error, isLoading: false }));
-  }
+  
 
   componentDidMount() {
-    this.getArticles();
+      fetch(`/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`)
+        .then(res => res.json())
+        .then(data =>
+          data.articles.map(article => ({
+            date: `${article.publishedAt}`,
+            title: `${article.title}`,
+            url: `${article.url}`,
+            author: `${article.author}`,
+            description: `${article.description}`,
+            source: `${article.source}`,
+            id: `${article.id}`
+          }))
+        )
+        .then(articles => {
+          this.setState({
+            articles,
+            isLoading: false
+          });
+        })
+        .catch(error => this.setState({ error, isLoading: false }));
   }
 
   render() {
