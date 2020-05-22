@@ -18,7 +18,7 @@ class News extends React.Component {
       fetch(`/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`, {
         method: 'GET',
         headers: {'Content-Type': 'application/json'},
-        mode: 'cors'
+        mode: 'no-cors'
       })
         .then(res => res.json())
         .then(data =>
