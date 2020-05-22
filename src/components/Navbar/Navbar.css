@@ -24,3 +24,19 @@ nav {
     color: rgb(3, 3, 3);
     text-decoration: none;
 }
+
+@media(max-width: 600px){
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin: 8px;
+    }
+    
+    .nav-links li {
+        margin: 8px;
+        color: rgb(3, 3, 3);
+        text-decoration: none;
+    }
+}

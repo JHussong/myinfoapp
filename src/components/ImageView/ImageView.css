@@ -1,13 +1,27 @@
-.imageView__container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+}
+
+.image-container {
+  display: block;
   margin-top: 25px;
-  width: 100vw;
+  height: 400px;
+  width: 75vw;
   text-align: center;
   color: #fff;
 }
   
-.imageView__img {
-  height: 400px;
-  width: auto;
+.img {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
   
 .imageView__copyright {
@@ -42,15 +56,13 @@
 }
 
 @media(max-width: 600px) {
-  .imageView__container {
+  .image-container {
+    display: block;
     margin-top: 25px;
-    width: 80vw;
+    height: 300px;
+    width: 90%;
     text-align: center;
     color: #fff;
   }
 
-  .imageView__img {
-    height: 400px;
-    width: auto;
-  }
 }
